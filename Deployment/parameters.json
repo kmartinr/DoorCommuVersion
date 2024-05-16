@@ -1,30 +1,30 @@
 {
   "subscriptionId": {
-    "Value": "<<value>>",
+    "Value": "bf1f024b-9c72-4228-b8d0-344459d72881",
     "Description": "Azure Subscription ID. All resources in an Azure subscription are billed together."
   },
   "subscriptionTenantId": {
-    "Value": "<<value>>",
+    "Value": "1163364f-b81a-4473-ac43-be8f25d0e533",
     "Description": "Id of the tenant to deploy to (If you are not sure how to get Tenant ID, please check Azure Active Directory in Azure Portal. Under Manage, click Properties. The tenant ID is shown in the Directory ID box). e.g 98f3ece2-3a5a-428b-aa4f-4c41b3f6eef0. Tenant ID is also in the \"Overview\" section\""
   },
   "resourceGroupName": {
-    "Value": "<<value>>",
+    "Value": "RG_DEV_TEAMS_COMMUNICATOR",
     "Description": "Resource Group"
   },
   "region": {
-    "Value": "<<value>>",
+    "Value": "West Europe",
     "Description": "The Azure region that's right for you and your customers. Not every resource is available in every region."
   },
   "baseResourceName": {
-    "Value": "<<value>>",
+    "Value": "ntt-teams-com",
     "Description": "The base name to use for the resources that will be provisioned."
   },
   "tenantId": {
-    "Value": "<<value>>",
+    "Value": "1163364f-b81a-4473-ac43-be8f25d0e533",
     "Description": "Tenant Id where the teams application will be installed. If the Azure subscription is in the same tenant, update with \"subscriptionTenantId\" parameter value."
   },
   "senderUPNList": {
-    "Value": "<<value>>",
+    "Value": "togoAdmin@everisdev.onmicrosoft.com, pamorosc@everisdev.onmicrosoft.com",
     "Description": "Semicolon-delimited list of the user principal names (UPNs) allowed to send messages."
   },
   "isUpgrade": {
@@ -52,7 +52,7 @@
     "Description": "Comma-delimited list of the supported cultures."
   },
   "hostingPlanSku": {
-    "Value": "Standard",
+    "Value": "Basic",
     "Description": "The pricing tier for the hosting plan. Defaul value: Standard. You may choose between Basic, Standard and Premium."
   },
   "hostingPlanSize": {
@@ -60,19 +60,19 @@
     "Description": "The size of the hosting plan (small - 1, medium - 2, or large - 3). Default value: 1"
   },
   "gitRepoUrl": {
-    "Value": "https://github.com/OfficeDev/microsoft-teams-company-communicator-app.git",
+    "Value": "https://ArquitecturaIT@dev.azure.com/ArquitecturaIT/Doorways%20Update/_git/Doorways%20Update",
     "Description": "The URL to the GitHub repository to deploy."
   },
   "gitBranch": {
-    "Value": "master",
+    "Value": "Dev2024",
     "Description": "The branch of the GitHub repository to deploy."
   },
   "appDisplayName": {
-    "Value": "Company Communicator",
+    "Value": "Doorways Update",
     "Description": "The app (and bot) display name."
   },
   "appDescription": {
-    "Value": "Broadcast messages to multiple teams and people in one go.",
+    "Value": "Broadcasts messages to multiple teams and individuals through channel posts and chat messages",
     "Description": "The app (and bot) description."
   },
   "appIconUrl": {
@@ -80,19 +80,19 @@
     "Description": "The link to the icon for the app. It must resolve to a PNG file."
   },
   "companyName": {
-    "Value": "<<value>>",
+    "Value": "NTTDATA",
     "Description": "The display name for the company."
   },
   "websiteUrl": {
-    "Value": "<<value>>",
+    "Value": "https://everisdev.sharepoint.com/",
     "Description": "The https:// URL to the company's website. This link should take users to your company or product-specific landing page."
   },
   "privacyUrl": {
-    "Value": "<<value>>",
+    "Value": "https://everisdev.sharepoint.com/Sites/dw/SitePages/Poltica-de-Privacidad-DOORWAYS.aspx",
     "Description": "The https:// URL to the company's privacy policy."
   },
   "termsOfUseUrl": {
-    "Value": "<<value>>",
+    "Value": "https://everisdev.sharepoint.com/Sites/dw/SitePages/Terms-of-Use-DOORWAYS.aspx",
     "Description": "The https:// URL to the company's terms of use."
   }
 }
