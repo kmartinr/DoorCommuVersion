@@ -212,7 +212,8 @@
     "ProactivelyInstallUserApp": "[parameters('ProactivelyInstallUserApp')]",
     "UserAppExternalId": "[parameters('UserAppExternalId')]",
     "i18n:DefaultCulture": "[parameters('DefaultCulture')]",
-    "i18n:SupportedCultures": "[parameters('SupportedCultures')]"
+    "i18n:SupportedCultures": "[parameters('SupportedCultures')]",
+    "netFrameworkVersion":"v6.0"
   },
   "resources": [
     {
@@ -357,7 +358,7 @@
             },
             {
               "name": "WEBSITE_NODE_DEFAULT_VERSION",
-              "value": "10.15.2"
+              "value": "16.13.0"
             }
           ],
           "cors": {
@@ -365,7 +366,14 @@
             "allowedOrigins": [
               "[concat('https://', variables('frontDoorDomain'))]"
             ]
-          }
+          },
+           "metadata": [
+            {
+              "name": "CURRENT_STACK",
+              "value": "dotnet"
+            }
+          ],
+          "netFrameworkVersion": "v6.0.100"
         }
       },
       "dependsOn": [
@@ -599,6 +607,7 @@
         "httpsOnly": true,
         "siteConfig": {
           "alwaysOn": "[not(variables('isSharedPlan'))]",
+          "netFrameworkVersion": "[variables('netFrameworkVersion')]",
           "appSettings": [
             {
               "name": "PROJECT",
@@ -634,7 +643,7 @@
             },
             {
               "name": "FUNCTIONS_EXTENSION_VERSION",
-              "value": "~3"
+              "value": "~4"
             },
             {
               "name": "FUNCTIONS_WORKER_RUNTIME",
@@ -719,6 +728,7 @@
         "httpsOnly": true,
         "siteConfig": {
           "alwaysOn": "[not(variables('isSharedPlan'))]",
+          "netFrameworkVersion": "[variables('netFrameworkVersion')]",
           "appSettings": [
             {
               "name": "PROJECT",
@@ -746,7 +756,7 @@
             },
             {
               "name": "FUNCTIONS_EXTENSION_VERSION",
-              "value": "~3"
+              "value": "~4"
             },
             {
               "name": "FUNCTIONS_WORKER_RUNTIME",
@@ -823,6 +833,7 @@
         "httpsOnly": true,
         "siteConfig": {
           "alwaysOn": "[not(variables('isSharedPlan'))]",
+          "netFrameworkVersion": "[variables('netFrameworkVersion')]",
           "appSettings": [
             {
               "name": "PROJECT",
@@ -850,7 +861,7 @@
             },
             {
               "name": "FUNCTIONS_EXTENSION_VERSION",
-              "value": "~3"
+              "value": "~4"
             },
             {
               "name": "FUNCTIONS_WORKER_RUNTIME",
